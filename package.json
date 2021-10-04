@@ -10,7 +10,6 @@
     "bootstrap": "4.5.0",
     "lodash": "4.17.15",
     "moment": "2.27.0",
-    "node-sass": "4.14.1",
     "prop-types": "15.7.2",
     "react": "^16.13.1",
     "react-bootstrap": "1.0.1",
@@ -18,13 +17,15 @@
     "react-redux": "7.2.0",
     "react-scripts": "3.4.1",
     "redux": "4.0.5",
-    "redux-thunk": "2.3.0"
+    "redux-thunk": "2.3.0",
+    "sass": "^1.42.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start-client": "react-scripts start",
+    "build": "react-scripts build && (cd server && yarn install)",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "cd server && yarn start"
   },
   "eslintConfig": {
     "extends": "react-app"
